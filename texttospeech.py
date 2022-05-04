@@ -4,7 +4,7 @@ client = texttospeech.TextToSpeechClient()
 text = input()
 synthesis_input = texttospeech.SynthesisInput(text=text)
 voice = texttospeech.VoiceSelectionParams(
-    language_code="en-EU", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+    language_code="ko-KR", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
 )
 audio_config = texttospeech.AudioConfig(
     audio_encoding=texttospeech.AudioEncoding.MP3
